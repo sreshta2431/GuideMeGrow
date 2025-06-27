@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources</title>
+    <style>
+        body {   
+            font-family: Arial, sans-serif;
+            background-color: #4b4646;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #004494;
+        }
+
+        .internship-links, .career-planning-links {
+            display: none; /* Hidden by default */
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleInternships() {
+            const links = document.getElementById('internship-links');
+            links.style.display = links.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleCareerPlanning() {
+            const links = document.getElementById('career-planning-links');
+            links.style.display = links.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Learning Resources</h1>
+
+        <!-- C++ Section -->
+        <h2>C++</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=c%2B%2B+tutorial" target="_blank">C++ Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://www.learncpp.com/" target="_blank">LearnCpp.com</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-c-plus-plus" target="_blank">HackerRank C++ Practice</a></li>
+        </ul>
+
+        <!-- Java Section -->
+        <h2>Java</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=java+tutorial" target="_blank">Java Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://www.oracle.com/java/technologies/javase/docs/technotes/guides/language/index.html" target="_blank">Oracle Java Documentation</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-java" target="_blank">HackerRank Java Practice</a></li>
+        </ul>
+
+        <!-- Database Management Systems Section -->
+        <h2>Database Management Systems (DBMS)</h2>
+        <ul>
+            <li><strong>SQL Tutorials:</strong> <a href="https://www.w3schools.com/sql/" target="_blank"> SQL Tutorial</a></li>
+            <li><strong>Relational Database Design:</strong> <a href="https://www.guru99.com/database-design.html" target="_blank">Database Design Basics</a></li>
+            <li><strong>NoSQL Resources:</strong> <a href="https://www.mongodb.com/what-is-mongodb" target="_blank">MongoDB Introduction</a></li>
+        </ul>
+
+        <!-- Operating Systems Section -->
+        <h2>Operating Systems (OS)</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=operating+systems+tutorial" target="_blank">Operating Systems Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://www.geeksforgeeks.org/operating-systems/" target="_blank"> OS Guide</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-ubuntu" target="_blank">HackerRank OS Practice</a></li>
+        </ul>
+
+        <!-- NPTEL Section -->
+        <h2>NPTEL</h2>
+        <ul>
+            <li><strong>Programming in Java:</strong> <a href="https://onlinecourses.swayam2.ac.in/cec20_cs14/preview" target="_blank">NPTEL Swayam Link</a></li>
+        </ul>
+
+        <!-- Career Planning Button -->
+        <h2>Career Planning</h2>
+        <a class="button" onclick="toggleCareerPlanning()">View Career Planning Ideas</a>
+        <div id="career-planning-links" class="career-planning-links">
+            <ul>
+                <li><strong>Research Industries:</strong> Explore different industries to identify where your skills can be applied.</li>
+                <li><strong>Networking:</strong> Attend workshops, seminars, and webinars to meet industry professionals.</li>
+                <li><strong>Informational Interviews:</strong> Schedule meetings with professionals in your field to gain insights into their careers.</li>
+                <li><strong>Online Courses:</strong> Take courses in specialized areas you’re interested in pursuing.</li>
+                <li><strong>Build a Portfolio:</strong> Document your projects and achievements to showcase your skills to future employers.</li>
+                <li><strong>Update Resume:</strong> Keep your resume current with new skills and experiences.</li>
+                <li><strong>Seek Mentorship:</strong> Find a mentor who can guide you in your career path.</li>
+                <li><strong>Set Goals:</strong> Define your short-term and long-term career goals and create a plan to achieve them.</li>
+            </ul>
+        </div>
+
+        <!-- Internships Button -->
+        <h2>Internships</h2>
+        <a class="button" onclick="toggleInternships()">View Internships</a>
+        <div id="internship-links" class="internship-links">
+            <ul>
+                <li><a href="https://internshala.com/" target="_blank">Internshala</a></li>
+                <li><a href="https://www.linkedin.com/jobs/internships/" target="_blank">LinkedIn Internships</a></li>
+                <li><a href="https://www.letsintern.com/" target="_blank">LetsIntern</a></li>
+            </ul>
+        </div>
+
+        <!-- Time Management Section -->
+        <h2>Time Management</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=time+management+tutorial" target="_blank">Time Management Tutorials</a></li>
+            <li><strong>Resource:</strong> <a href="https://www.mindtools.com/pages/article/newTCS_00.htm" target="_blank">MindTools Time Management</a></li>
+        </ul>
+    </div>
+</body>
+</html>

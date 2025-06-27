@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuidMegroW - Home</title>
+    <style> add background img 
+    
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #5d5555;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .semester-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 80%;
+        }
+        .semester-buttons a {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f4f7f5;
+            color: rgb(233, 120, 28);
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .semester-buttons a:hover {
+            background-color: #c6c7c9;
+        }
+        @media (max-width: 768px) {
+            .semester-buttons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .semester-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a Semester</h1>
+        <div class="semester-buttons">
+            <a href="semester1.html">Semester 1</a>
+            <a href="semester2.html">Semester 2</a>
+            <a href="semester3.html">Semester 3</a>
+            <a href="semester4.html">Semester 4</a>
+            <a href="semester5.html">Semester 5</a>
+            <a href="semester6.html">Semester 6</a>
+            <a href="semester7.html">Semester 7</a>
+            <a href="semester8.html">Semester 8</a>
+        </div>
+    </div>
+</body>
+</html>

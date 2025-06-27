@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4c4949;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background-color: #004494;
+        }
+
+        .leadership-skills, .technical-competitions {
+            display: none; /* Hidden by default */
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleLeadershipSkills() {
+            const skills = document.getElementById('leadership-skills');
+            skills.style.display = skills.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleTechnicalCompetitions() {
+            const competitions = document.getElementById('technical-competitions');
+            competitions.style.display = competitions.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Learning Resources</h1>
+
+        <!-- HTML Section -->
+        <h2>HTML</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=html+tutorial" target="_blank">HTML Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web docs  HTML Guide</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.w3schools.com/html/html_exercises.asp" target="_blank">HTML Exercises</a></li>
+        </ul>
+
+        <!-- CSS Section -->
+        <h2>CSS</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=css+tutorial" target="_blank">CSS Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs CSS Guide</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.w3schools.com/css/css_exercises.asp" target="_blank"> CSS Exercises</a></li>
+        </ul>
+
+        <!-- JavaScript Section -->
+        <h2>JavaScript</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=javascript+tutorial" target="_blank">JavaScript Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs JavaScript Guide</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript" target="_blank">HackerRank JavaScript Practice</a></li>
+        </ul>
+
+        <!-- Computer Networks Section -->
+        <h2>Computer Networks</h2>
+        <ul>
+            <li><strong>Video Lectures:</strong> <a href="https://www.youtube.com/results?search_query=computer+networks+tutorial" target="_blank">Computer Networks Tutorials</a></li>
+            <li><strong>Notes:</strong> <a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank"> Computer Networks Guide</a></li>
+            <li><strong>Practice Problems:</strong> <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-computer-networks" target="_blank">HackerRank Computer Networks Practice</a></li>
+        </ul>
+
+        <!-- NPTEL Section -->
+        <h2>NPTEL</h2>
+        <ul>
+            <li><strong> Basic web development</strong> <a href="https://onlinecourses.swayam2.ac.in/cec20_cs14/preview" target="_blank">NPTEL Swayam Link</a></li>
+        </ul>
+
+        <!-- Leadership Skills Button -->
+        <h2>Leadership Skills Through Group Projects and Presentations</h2>
+        <a class="button" onclick="toggleLeadershipSkills()">View Leadership Skills Resources</a>
+        <div id="leadership-skills" class="leadership-skills">
+            <ul>
+                <li><strong>Importance of Leadership Skills:</strong> Developing leadership skills through group projects can enhance teamwork, communication, and problem-solving abilities.</li>
+                <li><strong>Group Projects:</strong> Participate actively, delegate tasks, and foster collaboration to ensure all team members contribute.</li>
+                <li><strong>Presentations:</strong> Practice public speaking, prepare clear presentations, and engage the audience to improve your presentation skills.</li>
+                <li><strong>Feedback and Reflection:</strong> After group projects, discuss what worked and what didn’t to continuously improve your leadership abilities.</li>
+            </ul>
+        </div>
+
+        <!-- Technical Competitions Button -->
+        <h2>Technical Competitions</h2>
+        <a class="button" onclick="toggleTechnicalCompetitions()">View Technical Competitions Links</a>
+        <div id="technical-competitions" class="technical-competitions">
+            <ul>
+                <li><a href="https://www.codechef.com/" target="_blank">CodeChef</a></li>
+                <li><a href="https://www.hackerearth.com/challenges/" target="_blank">HackerEarth</a></li>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-javascript" target="_blank">HackerRank</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
